@@ -1,0 +1,18 @@
+<h1 style="text-align: center;"> Game setup </h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6" style="text-align: center;">
+            <label><span>No of Players:</span><input [(ngModel)]="player" type="number" min="1" max="12" value="2"/></label>
+        </div>
+        <div class="col-sm-6" style="text-align: center;">
+            <label><span>Board size:</span><input [(ngModel)]="board" type="number" min="1" max="12" value="5"/></label>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-sm-5"></div>
+        <div class="col-sm-2">
+            <button class="btn btn-primary" (click)="onCreateGame()" >Create Game</button>
+        </div>
+        <div class="col-sm-5"></div>
+    </div>
+</div>

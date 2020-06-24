@@ -1,0 +1,11 @@
+<div class="container">
+    <ng-container *ngFor="let item of boardLength | range">
+      <div class="row" style="justify-content: center;">
+        <ng-container *ngFor="let item of boardLength | range">
+          <div class="col-sm-1">
+            <app-cell></app-cell>
+          </div>
+        </ng-container>
+      </div>
+    </ng-container>
+  </div>
